@@ -1,0 +1,30 @@
+{
+  "name": "express-crud-api",
+  "version": "1.0.0",
+  "description": "A CRUD API built with ExpressJS and TypeScript",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "init": "docker-compose up -d --build && npx prisma migrate dev --name init"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.17.1",
+    "prisma": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=16.x",
+    "npm": ">=8.x"
+  }
+}
