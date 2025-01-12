@@ -14,6 +14,7 @@ This project is an ExpressJS server built with TypeScript that provides a CRUD A
 
 ## How to Run
 To start the application, simply run the command:
+```
 npm run init
-
+```
 The server should start running on http://localhost:3000/
